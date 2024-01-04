@@ -20,7 +20,7 @@ body, html{
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #F5F5F5 ;
+    background: #B18659;
 }
 main{
     width: 100%;
@@ -29,6 +29,8 @@ main{
 section, aside{
     width: 100%;
     min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 h1{
     font-family: coffee;
@@ -81,11 +83,13 @@ header{
     z-index: 0;
 }
 /*~~~~~~~~~~~~~~~~~ Web2 ~~~~~~~~~~~~~~~~~~*/
+#web2{background-color: #F5F5F5 ;}
 #web2 h2, #web3 h2, #web5 h2{
     text-align: center;
     margin: 25px;
     color: #3E2318;
 }
+#web2 h2{margin-top: 5px;}
 #web2 p, #web3 p, #web4p, #web5 p{
     max-width: 350px;
     margin: 10px;
@@ -123,7 +127,12 @@ aside article{
 }
 /*~~~~~~~~~~~~~~~~~ Web4 ~~~~~~~~~~~~~~~~~~*/
 #web4{
+    min-height: 100vh;
     background: #3E2318;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
     position: relative;
 }
 #web4 article p , h2, h3{
@@ -134,12 +143,12 @@ aside article{
     margin: 20px;
     color: C4B49D;
 }
+
 #web4-container{
     width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;    
+    transform: translateY(-50%);
 }
   .embed-responsive {
     position: relative;
@@ -156,10 +165,12 @@ aside article{
     top: 0;
   }
 /*~~~~~~~~~~~~~~~~~ Web5 ~~~~~~~~~~~~~~~~~~*/
+#web5{min-height: 100vh;background: #B18659;}
 #web5 div{
     display: flex;
     padding: 5px;
-    margin: 200px 0px;
+    margin: 150px 0px;
+    background: #B18659;
 }
 #text-coffee-americano{display: flex;transform: translateY(-70px);}
 .tipo-cafe{
@@ -168,6 +179,10 @@ aside article{
     margin: 0px 0px 0px 5px;
     border-radius: 20px;
 }
+#web5 hr{
+    
+    background: #3E2318;
+}
 .left{
     float: right;
     width: 150px;
@@ -175,3 +190,4 @@ aside article{
     margin: 0px 5px 0px 0px;
     border-radius: 20px;
     }
+    
