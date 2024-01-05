@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#3E2318" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Coffee</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpeg" href="Coffee-cat.jpg">
@@ -11,9 +12,20 @@
 <body>
     <main>
         <section id="web1">
+            
             <video id="video1"autoplay loop muted>
                 <source src="Back-pc3.mp4" type="video/mp4">
             </video>
+            <span id="menu" onclick="ClickMenu()" class="material-symbols-outlined">menu</span>
+            <nav id="NAV-MENU">
+                <ul>
+                    <li id="menu01"><a href="#web2">História e tradição</a></li>
+                    <li id="menu02"><a href="#web3">Descubra o café</a></li>
+                    <li id="menu03"><a href="#guia">Guia do café</a></li>
+                    <li id="menu04"><a href="#web4">Receita</a></li>
+                    <li id="menu05"><a href="#web5">Tipos de Café</a></li>
+                </ul>
+            </nav>
             <header>
             <h1>Coffee</h1>
             <p>Bem-vindo ao Mundo do Café!</p>
@@ -59,34 +71,35 @@ Canela em pó</p></article></div>
         </section>
         <section id="web5">
             <h2>Tipos de Café</h2>
+            <hr>
             <div>
             <img class="tipo-cafe"src="Expresso.png" alt="cafe expresso"></img>
-            <p>**Expresso:** Um café concentrado preparado forçando água quente sob pressão através de grãos finamente moídos, resultando em uma bebida encorpada e intensa.</p></div>
+            <p>**Expresso:** Um café concentrado preparado forçando água quente sob pressão através de grãos finamente moídos, resultando em uma bebida encorpada e intensa.</p></div><hr>
 <div id="text-coffee-americano"> 
- <p class="tipo-cafe" >**Café Americano:** Feito diluindo um expresso com água quente, proporcionando uma bebida mais suave e semelhante ao café tradicional.</p>
+ <p style="text-align: right; min-width: 220px;"class="tipo-cafe" >**Café Americano:** Feito diluindo um expresso com água quente, proporcionando uma bebida mais suave e semelhante ao café tradicional.</p>
  <img class="left" src="Americano.jpeg" alt="cafe americano"></img>
-</div>
-<div >
+</div><hr>
+<div>
     <img class="tipo-cafe"src="Latte.jpeg" alt="cafe latte"></img>
  <p>**Café Latte:** Composto por um expresso e uma quantidade generosa de leite vaporizado, resultando em uma bebida cremosa e suave.</p>
- </div>
+ </div><hr>
 <div>
- <p>**Cappuccino:** Uma mistura equilibrada de expresso, leite vaporizado e espuma de leite, proporcionando uma textura rica e cremosa.</p><img class="left"src="Cappuccino.jpeg" alt="capuccino"></img>
-</div>
+ <p style="text-align: right;">**Cappuccino:** Uma mistura equilibrada de expresso, leite vaporizado e espuma de leite, proporcionando uma textura rica e cremosa.</p><img class="left"src="Cappuccino.jpeg" alt="capuccino"></img>
+</div><hr>
  <div>
      <img class="tipo-cafe"src="Macchiato.jpeg" alt="cafe macchiato"></img>
-     <p>**Macchiato:** Um expresso com uma pequena quantidade de leite, criando uma bebida mais forte com um toque de suavidade.</p></div>
+     <p>**Macchiato:** Um expresso com uma pequena quantidade de leite, criando uma bebida mais forte com um toque de suavidade.</p></div><hr>
 <div>
- <p>**Mocha:** Uma combinação de expresso, leite vaporizado e xarope de chocolate, resultando em uma bebida indulgente e levemente doce.
-</p><img class="left"src="Mocha.jpeg" alt="cafe mocha"></img></div>
+ <p style="text-align: right;">**Mocha:** Uma combinação de expresso, leite vaporizado e xarope de chocolate, resultando em uma bebida indulgente e levemente doce.
+</p><img class="left"src="Mocha.jpeg" alt="cafe mocha"></img></div><hr>
  <div>
      <img class="tipo-cafe"src="Affogato.jpeg" alt="cafe affogato"></img>
-     <p>**Affogato:** Uma sobremesa que consiste em um expresso derramado sobre uma bola de sorvete, criando uma mistura deliciosa de café e doçura.</p></div>
+     <p>**Affogato:** Uma sobremesa que consiste em um expresso derramado sobre uma bola de sorvete, criando uma mistura deliciosa de café e doçura.</p></div><hr>
 <div>
- <p>**Cold Brew:** Café preparado ao mergulhar grãos moídos em água fria por um longo período, resultando em uma bebida suave e menos ácida.</p><img class="left"src="Cold brew.jpeg" alt="cafe Cold brew"></img></div>
+ <p style="text-align: right ;">**Cold Brew:** Café preparado ao mergulhar grãos moídos em água fria por um longo período, resultando em uma bebida suave e menos ácida.</p><img class="left"src="Cold brew.jpeg" alt="cafe Cold brew"></img></div><hr>
         </section>
     </main>
     <script src="script.js"></script>
+   
 </body>
-                    </html>
-    
+</html>
