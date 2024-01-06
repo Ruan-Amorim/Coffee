@@ -1,0 +1,82 @@
+
+@media screen and (min-width: 768px){
+/* ~~~~~~web1~~~~~ */
+    #menu{
+        left: 90%;
+        margin-top: 25px;
+        transform: translateY(-100vh) scale(1.6);
+        position: sticky;
+        z-index: 3;    
+    }
+    #NAV-MENU{
+        display: none;
+        width: 185px;
+        top: 10;
+        left: 90%;
+        transform: translateY(-100vh) translateX(-200px);
+        position: absolute;
+        z-index: 2;
+        animation: right 1.5s ease-out;
+    }
+    #menu01{transform: translateY(20px) translateX(50px);width: 200px;}
+    #menu02{transform: translateY(25px) translateX(65px);}
+    #menu03{transform: translateY(35px) translateX(65px);}
+    #menu04{transform: translateY(45px) translateX(65px);}
+    #menu05{transform: translateY(50px) translateX(65px);}
+/* ~~~~~~web2~~~~~ */
+    #container-web2{display: flex;}
+    #container-web2 div, #textoi{
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border-radius: 20px 5px;
+    }
+/* ~~~~~~web3~~~~~ */
+    #web3{padding: 0px;}
+    #container-web3{display: flex;}
+    #bloco-01-web3{
+        width: 50%;
+        float: left;
+    }
+    #bloco-01-web3 img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 0px 20px 20px 0px;
+    }
+    #bloco-02-web3{
+        width: 50%;
+        height: 100vh;
+        float: right;
+        overflow-y: scroll;
+    }
+/* ~~~~~~aside~~~~~ */
+    aside{
+        margin-top: 100px;
+    }
+    #container-aside{display: flex;}
+    #container-aside > img{
+        width: 40%;
+        height: 100%;
+        margin: 15px;
+        float: left;
+        object-fit: cover;
+        border-radius: 0px 20px 20px 0px;
+    }
+    #container-aside  > article{
+        width: 60%;
+        height: 100%;
+        flex-wrap: wrap;
+        float: right;
+        overflow: ;
+    }
+/* ~~~~~~web5~~~~~ */
+    #web5 img{
+        width: 220px;
+        height: 220px;
+    }
+    #web5 .img-left{margin: 0px 0px 0px 150px;}
+    #web5 .left{margin: 0px 150px 0px 0px;}
+}
