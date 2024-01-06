@@ -50,7 +50,7 @@ section, aside{
 }
 h1{
     font-family: coffee;
-    font-size: 3.5em;
+    font-size: 3.7em;
     letter-spacing: 3.5px;
     color: #3E2318;
     text-shadow: 0px 0px 10px #d2b88ce7;
@@ -62,7 +62,7 @@ h2{
 }
 p{
     font-family: coffee2;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 /*~~~~~~~~~~~~~~~~~ Web1 ~~~~~~~~~~~~~~~~~~*/
 #NAV-MENU{
@@ -75,16 +75,18 @@ p{
     z-index: 2;
 }
 a{text-decoration: none;color: #3E2318;font-family: coffee2;}
+#web1 a{color: #F5F5F5 ;text-shadow: 1px 1px 5px #3e241ade;}
 nav > ul{
     list-style: none;
 }
 nav > ul > li{
     white-space: nowrap;
     font-size: 1.2em;
-    background: #b18b59c5;
+    background: #b18b5932;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #3e241abe;
+    backdrop-filter: blur(5px) ;
 }
 nav > ul > li > a:visited{
     list-style: none;
@@ -126,9 +128,10 @@ header{
 .text-back{
     margin: 5px;
     padding: 5px;
-    background: #b18b59b6;
+    background: #b18b5932;
     border-radius: 20px;
     box-shadow: 1px 1px 5px #3e241abe;
+    backdrop-filter: blur(5px) ;
 }
 #web1 video{
     position: relative;
@@ -183,7 +186,7 @@ aside article{
 /*~~~~~~~~~~~~~~~~~ Web4 ~~~~~~~~~~~~~~~~~~*/
 #web4{
     min-height: 100vh;
-    background: #3E2318;
+    background: #B18659;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -219,8 +222,25 @@ aside article{
     left: 0;
     top: 0;
   }
+#web4-bloco2{
+    display: block;
+}
+#web4-bloco2{display: none;}
+.trocar{
+    margin: 5px auto;
+    text-transform: uppercase;
+    font-family: coffee;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #3E2318;
+}
+.trocar:hover{
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
 /*~~~~~~~~~~~~~~~~~ Web5 ~~~~~~~~~~~~~~~~~~*/
-
+#web5 p{font-size: 1.1em;}
 #web5 h2{text-transform: uppercase;}
 #web5{min-height: 100vh;background: #B18659;}
 #web5 div{
@@ -269,4 +289,4 @@ aside article{
     animation: textleft 1s ease-in-out;
     animation-timeline:view();
     animation-range:cover 0% cover 30%;
-  }
+}
