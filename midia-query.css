@@ -56,22 +56,40 @@
     aside{
         margin-top: 100px;
     }
-    #container-aside{display: flex;}
+    #container-aside{display: flex;margin: auto;}
     #container-aside > img{
         width: 40%;
         height: 100%;
         margin: 15px;
         float: left;
         object-fit: cover;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 0px 20px;
+        margin: auto;
     }
-    #container-aside  > article{
-        width: 60%;
-        height: 100%;
-        flex-wrap: wrap;
-        float: right;
-        overflow: ;
+   
+/* ~~~~~~web4~~~~~ */    
+    #web4 h2{
+        margin: 5px auto;
     }
+    #web4{
+        padding: 10px 0px;
+    }   
+   .embed-responsive {
+    position: relative;
+    width: 45%;
+    height: 0;
+    margin: auto;
+    padding-bottom: 24.25%; /* Proporção para vídeos 16:9, ajuste conforme necessário */
+  }
+
+  .embed-responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3E2318;
+  }
 /* ~~~~~~web5~~~~~ */
     #web5 img{
         width: 220px;
@@ -79,4 +97,6 @@
     }
     #web5 .img-left{margin: 0px 0px 0px 150px;}
     #web5 .left{margin: 0px 150px 0px 0px;}
-}
+
+        }
+        
