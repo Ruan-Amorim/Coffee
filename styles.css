@@ -14,24 +14,29 @@
     src: url('Merienda-VariableFont_wght.ttf');
 }
 /* ~~~~~~~~~ANIMACOES~~~~~~~~~~ */
-@keyframes right {
+@keyframes RIGTH {
     from{
         opacity: 0;
-        transform: translateX(100vh 0);
+        
+        transform: translateY(-100vh) translateX(500px);
     }
     to{
         opacity: 1;
-        transform: translateX(0 0);
+        translateY(-100vh)
+        transform: translateX(0);
     }
 }
+@keyframes textleft{from{transform:translateX(-100vw);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes textright{from{transform:translateX(100vw);opacity:0}to{transform:translateX(0);opacity:1}}
+
 /*~~~~~~~~~~~~~~~~~ GERAL ~~~~~~~~~~~~~~~~~~*/
 *{padding: 0px;margin: 0px; font-family: Arial, Helvetica, sans-serif; text-justify: auto;}
-body{transition: 0.5s;}
 body, html{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     overflow-x: hidden;
     background: #B18659;
+    scroll-behavior: smooth;
 }
 main{
     width: 100%;
@@ -68,22 +73,23 @@ p{
     transform: translateY(-100vh) translateX(-200px);
     position: absolute;
     z-index: 2;
-    animation: right 1.5s ease-out;
 }
-a{text-decoration: none;color: #F5F5F5;}
+a{text-decoration: none;color: #3E2318;font-family: coffee2;}
 nav > ul{
     list-style: none;
 }
 nav > ul > li{
+    white-space: nowrap;
     font-size: 1.2em;
     background: #b18b59c5;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px #3e241abe;
 }
 nav > ul > li > a:visited{
     list-style: none;
     text-decoration:none;
-    color: #F5F5F5;
+    color: #3E2318;
 }
 #menu{
     left: 85%;
@@ -92,11 +98,11 @@ nav > ul > li > a:visited{
     position: sticky;
     z-index: 3;    
 }
-#menu01{transform: translateY(-50px);}
-#menu02{transform: translateY(-45px) translateX(-50px);}
-#menu03{transform: translateY(-35px) translateX(-55px);}
-#menu04{transform: translateY(-25px) translateX(-20px);}
-#menu05{transform: translateY(-20px) translateX(30px);}
+#menu01{transform: translateY(-50px) translateX(-15px);width: 200px;animation: RIGTH 0.5s ease-out;}
+#menu02{transform: translateY(-45px) translateX(-50px);animation: RIGTH 0.6s ease-out;}
+#menu03{transform: translateY(-35px) translateX(-55px);animation: RIGTH 0.7s ease-out;}
+#menu04{transform: translateY(-25px) translateX(-20px);animation: RIGTH .8s ease-out;}
+#menu05{transform: translateY(-20px) translateX(30px);animation: RIGTH .9s ease-out;}
 header{
     width: 300px;
     position: absolute;
@@ -138,7 +144,7 @@ header{
     margin: 25px;
     color: #3E2318;
 }
-#web2 h2{margin-top: 5px;}
+#web2 h2{margin-top: 5px;transform: translateY(-39px);}
 #web2 p, #web3 p, #web4p, #web5 p{
     max-width: 350px;
     margin: 10px;
@@ -214,11 +220,13 @@ aside article{
     top: 0;
   }
 /*~~~~~~~~~~~~~~~~~ Web5 ~~~~~~~~~~~~~~~~~~*/
+
+#web5 h2{text-transform: uppercase;}
 #web5{min-height: 100vh;background: #B18659;}
 #web5 div{
     display: flex;
     padding: 5px;
-    margin: 150px 0px;
+    margin: 150px auto;
     background: #B18659;
 }
 #web5 img{
@@ -231,7 +239,6 @@ aside article{
     border-radius: 20px;
 }
 #web5 hr{
-    
     background: #3E2318;
 }
 .left{
@@ -240,5 +247,26 @@ aside article{
     height: 150px;
     margin: 0px 5px 0px 0px;
     border-radius: 20px;
-    }
-        
+    animation: textright 1s ease-in-out;
+    animation-timeline:view();
+    animation-range:cover 0% cover 30%;
+}
+.img-left{
+    width: 150px;
+    height: 150px;
+    margin: 0px 0px 0px 5px;
+    border-radius: 20px;
+    animation: textleft 1s ease-in-out;
+    animation-timeline:view();
+    animation-range:cover 0% cover 30%;
+}
+.textright{
+    animation: textright 1s ease-in-out;
+    animation-timeline:view();
+    animation-range:cover 0% cover 30%;
+}
+.text-left{
+    animation: textleft 1s ease-in-out;
+    animation-timeline:view();
+    animation-range:cover 0% cover 30%;
+  }
