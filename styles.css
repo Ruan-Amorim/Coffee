@@ -290,3 +290,58 @@ aside article{
     animation-timeline:view();
     animation-range:cover 0% cover 30%;
 }
+/*~~~~~~~~~~~~~~~~~ Web6 ~~~~~~~~~~~~~~~~~~*/
+#Seu-pedido {
+    flex-wrap: wrap;
+}
+#web6 h2{
+    margin: 25px;
+}
+#web6 span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #F5F5F5;
+    margin: auto;
+    padding: 5px;
+}
+.valor {
+    background: #5f3728;
+}
+.add{
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 10px 10px 0px;
+    background: #3E2318;
+}
+.remove{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 0px 0px 10px;   
+    background: #3E2318;
+}
+#Seu-pedido p{
+   font-family: coffee2;
+   text-align: center;
+   margin-top: 5px;
+}
+#web6 > ul{
+    display: block;
+    list-style: none;
+    margin: auto;
+}
+#web6 img{
+display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 25px;
+}
+#web6 li{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+    
