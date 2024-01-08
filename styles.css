@@ -28,9 +28,16 @@
 }
 @keyframes textleft{from{transform:translateX(-100vw);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes textright{from{transform:translateX(100vw);opacity:0}to{transform:translateX(0);opacity:1}}
-
+@keyframes opacy {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /*~~~~~~~~~~~~~~~~~ GERAL ~~~~~~~~~~~~~~~~~~*/
-*{padding: 0px;margin: 0px; font-family: Arial, Helvetica, sans-serif; text-justify: auto;}
+*{padding: 0px;margin: 0px; font-family: Arial, Helvetica, sans-serif; text-justify: auto;user-select: none;}
 body, html{
     width: 100vw;
     height: 100vh;
@@ -41,6 +48,7 @@ body, html{
 main{
     width: 100%;
     height: 100%;
+    
 }
 section, aside{
     width: 100%;
@@ -99,6 +107,8 @@ nav > ul > li > a:visited{
     transform: translateY(-100vh) scale(1.6);
     position: sticky;
     z-index: 3;    
+    color: #3E2318;
+    animation: opacy 0.5s ease-in-out;
 }
 #menu01{transform: translateY(-50px) translateX(-15px);width: 200px;animation: RIGTH 0.5s ease-out;}
 #menu02{transform: translateY(-45px) translateX(-50px);animation: RIGTH 0.6s ease-out;}
@@ -132,6 +142,7 @@ header{
     border-radius: 20px;
     box-shadow: 1px 1px 5px #3e241abe;
     backdrop-filter: blur(5px) ;
+    animation: opacy 1s ease-in-out;
 }
 #web1 video{
     position: relative;
@@ -154,6 +165,11 @@ header{
     padding: 10px;
     margin: auto;
     
+}
+#web2 p,#web3 p{
+    animation: opacy 1ms ease-in-out;
+    animation-timeline:view();
+    animation-range:cover 0% cover 30%;
 }
 /*~~~~~~~~~~~~~~~~~ Web3 ~~~~~~~~~~~~~~~~~~*/
 #web3{background: #B18659; padding: 10px 0px;}
@@ -192,6 +208,8 @@ aside article{
     align-content: center;
     text-align: center;
     position: relative;
+    animation: textright 1s ease-in-out;
+    
 }
 #web4 article p , h2, h3{
     text-align: center;
@@ -222,10 +240,14 @@ aside article{
     left: 0;
     top: 0;
   }
-#web4-bloco2{
-    display: block;
+#web4-bloco1{
+    display: block;    
+    animation: textleft 0.5s ease-in-out;
 }
-#web4-bloco2{display: none;}
+#web4-bloco2 h1{
+    color: #B18659;
+}
+#web4-bloco2{display: none;animation: textright 0.5s ease-in-out;}
 .trocar{
     margin: 5px auto;
     text-transform: uppercase;
@@ -291,13 +313,17 @@ aside article{
     animation-range:cover 0% cover 30%;
 }
 /*~~~~~~~~~~~~~~~~~ Web6 ~~~~~~~~~~~~~~~~~~*/
-#Seu-pedido {
-    flex-wrap: wrap;
+#Seu-pedido h2,#bibu {
+  color: #3E2318;
+}
+.bibu{
+    transform: translateY(1px) scale(1.1);
+    
 }
 #web6 h2{
     margin: 25px;
 }
-#web6 span{
+#web6  li span{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -305,9 +331,7 @@ aside article{
     margin: auto;
     padding: 5px;
 }
-.valor {
-    background: #5f3728;
-}
+
 .add{
     width: 30px;
     height: 30px;
@@ -343,5 +367,55 @@ display: block;
     margin: auto;
     margin-bottom: 50px;
     text-align: center;
-    }
+}
+.valor {
+    background: #5f3728;
+    padding: 0px 15px;
+}
+#seu-carrinho{
+    background: #3E2318;
+    min-height: 100vh;
+    padding: 10px 0px;
+}
+#seu-carrinho li{
+    color: #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    font-family: coffee2;
+}
+#seu-carrinho p{
+    text-align: center;
+    color: #F5F5F5;
+}
+.confirmar{
+    display: block;
+    width: 50%;
+    padding: 5px 10px;
+    background: #5f3728;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #F5F5F5;
+}
+.confirmar:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+#alerta{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #F5F5F5;
+    border-radius: 25px;
+    z-index: 5;
+}
+#alerta p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+        }
     
