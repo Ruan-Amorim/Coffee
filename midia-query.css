@@ -18,11 +18,134 @@
         z-index: 2;
         animation: right 1.5s ease-out;
     }
-    #menu01{transform: translateY(20px) translateX(50px);width: 200px;}
+    #web1 a{color: #F5F5F5 ;text-shadow: 1px 1px 5px #3e241ade;}
+    #menu01{transform: translateY(20px) translateX(51.5px);width: 200px;}
     #menu02{transform: translateY(25px) translateX(65px);}
-    #menu03{transform: translateY(35px) translateX(65px);}
-    #menu04{transform: translateY(45px) translateX(65px);}
-    #menu05{transform: translateY(50px) translateX(65px);}
+    #menu03{transform: translateY(30px) translateX(65px);}
+    #menu04{transform: translateY(35px) translateX(65px);}
+    #menu05{transform: translateY(40px) translateX(65px);}
+    #menu06{transform: translateY(45px) translateX(65px);}
+/* ~~~~~~web2~~~~~ */
+    #container-web2{display: flex;}
+    #container-web2 div, #textoi{
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border-radius: 20px 5px;
+    }
+/* ~~~~~~web3~~~~~ */
+    #web3{padding: 0px;}
+    #container-web3{display: flex;}
+    #bloco-01-web3{
+        width: 50%;
+        float: left;
+    }
+    #bloco-01-web3 img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 0px 20px 20px 0px;
+    }
+    #bloco-02-web3{
+        width: 50%;
+        height: 100vh;
+        float: right;
+        overflow-y: scroll;
+    }
+    #bloco-02-web3::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+    #bloco-02-web3::-webkit-scrollbar-thumb {
+  background-color: #3E2318; /* Cor do "ponteiro" da barra de rolagem */
+}
+/* ~~~~~~aside~~~~~ */
+    aside{
+        margin-top: 100px;
+    }
+    #container-aside{display: flex;margin: auto;}
+    #container-aside > img{
+        width: 40%;
+        height: 100%;
+        margin: 15px;
+        float: left;
+        object-fit: cover;
+        border-radius: 0px 20px;
+        margin: auto;
+    }
+   
+/* ~~~~~~web4~~~~~ */    
+    #web4 h2{
+        margin: 5px auto;
+    }
+    #web4{
+        padding: 10px 0px;
+    }   
+   .embed-responsive {
+    position: relative;
+    width: 45%;
+    height: 0;
+    margin: auto;
+    padding-bottom: 24.25%; /* Proporção para vídeos 16:9, ajuste conforme necessário */
+  }
+
+  .embed-responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3E2318;
+  }
+/* ~~~~~~web5~~~~~ */
+    img.text-right{transform: translateX(-80%) scale(1.1);}
+    img.text-left{transform: translateX(80%) scale(1.1);}
+    #text-coffee-americano{width: 300px;}
+/*~~~~~~~web6~~~~~~~~*/
+    #web6{
+        display: flex;
+    }
+    #Seu-pedido li{
+        width: 150px;
+        margin: 10%;
+    }
+    #Seu-pedido ul div{
+        display: flex;
+    }
+    #Seu-pedido{
+        width: 50%;
+        float: left;
+        flex-wrap: ;
+        margin: auto;
+    }
+    #seu-carrinho{
+        width: 30%;
+        float: right;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    /* ~~~~~~web1~~~~~ */
+    #menu{
+        left: 90%;
+        margin-top: 25px;
+        transform: translateY(-100vh) scale(1.6);
+        position: sticky;
+        z-index: 3;    
+    }
+    #NAV-MENU{
+        display: none;
+        width: 185px;
+        top: 10;
+        left: 90%;
+        transform: translateY(-100vh) translateX(-200px);
+        position: absolute;
+        z-index: 2;
+        animation: right 1.5s ease-out;
+    }
+    
 /* ~~~~~~web2~~~~~ */
     #container-web2{display: flex;}
     #container-web2 div, #textoi{
@@ -95,8 +218,27 @@
         width: 220px;
         height: 220px;
     }
-    #web5 .img-left{margin: 0px 0px 0px 150px;}
-    #web5 .left{margin: 0px 150px 0px 0px;}
-
+    #web5 .img-left{margin: 0px 0px 0px 220px;}
+    #web5 .left{margin: 0px 220px 0px 0px;}
+/*~~~~~~~web6~~~~~~~~*/
+    #web6{
+        display: flex;
+    }
+    #Seu-pedido li{
+        width: 150px;
+        margin: 10%;
+    }
+    #Seu-pedido ul div{
+        display: flex;
+    }
+    #Seu-pedido{
+        width: 60%;
+        float: left;
+        flex-wrap: ;
+    }
+    #seu-carrinho{
+        width: 40%;
+        float: right;
+    }
         }
         
