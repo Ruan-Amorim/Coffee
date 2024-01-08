@@ -5,6 +5,7 @@
     <meta name="theme-color" content="#3E2318" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <title>Coffee</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="midia-query.css">
@@ -27,6 +28,7 @@
                     <li id="menu03"><a href="#guia">Guia do café</a></li>
                     <li id="menu04"><a href="#web4">Receita</a></li>
                     <li id="menu05"><a href="#guia5">Cardápio</a></li>
+                    <li id="menu06"><a href="#seu-carrinho">carrinho</a></li>
                 </ul>
             </nav>
             <header>
@@ -99,30 +101,30 @@ Canela em pó</p> <h1 class="trocar"onclick="receita()">Trocar Receita</h1></art
             <h2>Cardápio</h2>
             <hr>
             <div>
-            <img class="img-left" class="tipo-cafe"src="Expresso.png" alt="cafe expresso"></img>
-            <p class="textright"><strong><a href="#">**Expresso:**</a></strong> Um café concentrado preparado forçando água quente sob pressão através de grãos finamente moídos, resultando em uma bebida encorpada e intensa.</p></div><hr>
-<div id="text-coffee-americano"> 
- <p class="text-left" style="text-align: right; min-width: 220px;"class="tipo-cafe" ><strong><a href="#">**Café Americano:**</a></strong> Feito diluindo um expresso com água quente, proporcionando uma bebida mais suave e semelhante ao café tradicional.</p>
- <img class="left" src="Americano.jpeg" alt="cafe americano"></img>
+            <img class="tipo-cafe text-left"src="Expresso.png" alt="cafe expresso"></img>
+            <p class="text-right"><strong><a href="#">**Expresso:**</a></strong> Um café concentrado preparado forçando água quente sob pressão através de grãos finamente moídos, resultando em uma bebida encorpada e intensa.</p></div><hr>
+<div> 
+ <p id="text-coffee-americano"class="tipo-cafe text-left" ><strong><a href="#">**Café Americano:**</a></strong> Feito diluindo um expresso com água quente, proporcionando uma bebida mais suave e semelhante ao café tradicional.</p>
+ <img class="text-right" src="Americano.jpeg" alt="cafe americano"></img>
 </div><hr>
 <div>
-    <img class="img-left" class="tipo-cafe"src="Latte.jpeg" alt="cafe latte"></img>
- <p class="textright"><strong><a href="#">**Café Latte:**</a></strong> Composto por um expresso e uma quantidade generosa de leite vaporizado, resultando em uma bebida cremosa e suave.</p>
+    <img class="tipo-cafe text-left"src="Latte.jpeg" alt="cafe latte"></img>
+ <p class="text-right"><strong><a href="#">**Café Latte:**</a></strong> Composto por um expresso e uma quantidade generosa de leite vaporizado, resultando em uma bebida cremosa e suave.</p>
  </div><hr>
 <div>
- <p class="text-left"style="text-align: right;"><strong><a href="#">**Cappuccino:**</a></strong> Uma mistura equilibrada de expresso, leite vaporizado e espuma de leite, proporcionando uma textura rica e cremosa.</p><img class="left"src="Cappuccino.jpeg" alt="capuccino"></img>
+ <p class="text-left"style="text-align: right;"><strong><a href="#">**Cappuccino:**</a></strong> Uma mistura equilibrada de expresso, leite vaporizado e espuma de leite, proporcionando uma textura rica e cremosa.</p><img class="text-right"src="Cappuccino.jpeg" alt="capuccino"></img>
 </div><hr>
  <div>
-     <img class="img-left" class="tipo-cafe"src="Macchiato.jpeg" alt="cafe macchiato"></img>
-     <p class="textright"><strong><a href="#">**Macchiato:**</a></strong> Um expresso com uma pequena quantidade de leite, criando uma bebida mais forte com um toque de suavidade.</p></div><hr>
+     <img  class="tipo-cafe text-left"src="Macchiato.jpeg" alt="cafe macchiato"></img>
+     <p class="text-right"><strong><a href="#">**Macchiato:**</a></strong> Um expresso com uma pequena quantidade de leite, criando uma bebida mais forte com um toque de suavidade.</p></div><hr>
 <div>
  <p class="text-left" style="text-align: right;"><strong><a href="#">**Mocha:**</a></strong> Uma combinação de expresso, leite vaporizado e xarope de chocolate, resultando em uma bebida indulgente e levemente doce.
-</p><img class="left"src="Mocha.jpeg" alt="cafe mocha"></img></div><hr>
+</p><img class="text-right"src="Mocha.jpeg" alt="cafe mocha"></img></div><hr>
  <div>
-     <img class="img-left"class="tipo-cafe"src="Affogato.jpeg" alt="cafe affogato"></img>
-     <p class="textright"><strong><a href="#">**Affogato:**</a></strong> Uma sobremesa que consiste em um expresso derramado sobre uma bola de sorvete, criando uma mistura deliciosa de café e doçura.</p></div><hr>
+     <img class="tipo-cafe text-left"src="Affogato.jpeg" alt="cafe affogato"></img>
+     <p class="text-right"><strong><a href="#">**Affogato:**</a></strong> Uma sobremesa que consiste em um expresso derramado sobre uma bola de sorvete, criando uma mistura deliciosa de café e doçura.</p></div><hr>
 <div>
- <p class="text-left"style="text-align: right ;"><strong><a href="#">**Cold Brew:**</a></strong> Café preparado ao mergulhar grãos moídos em água fria por um longo período, resultando em uma bebida suave e menos ácida.</p><img class="left"src="Cold brew.jpeg" alt="cafe Cold brew"></img></div><hr>
+ <p class="text-left"style="text-align: right ;"><strong><a href="#">**Cold Brew:**</a></strong> Café preparado ao mergulhar grãos moídos em água fria por um longo período, resultando em uma bebida suave e menos ácida.</p><img class="text-right"src="Cold brew.jpeg" alt="cafe Cold brew"></img></div><hr>
         </section>
         <section id="web6">
             <article id="Seu-pedido">
@@ -130,18 +132,19 @@ Canela em pó</p> <h1 class="trocar"onclick="receita()">Trocar Receita</h1></art
 shopping_bag
 </span>Faça seu pedido</h2>
             <ul>
+                <div>
                 <li> <img src="Expresso.png" alt="cafe Expresso"></img><p>Expresso</p><p>Preço: 9,50R$</p><br><span onclick="clickProdMenos01()" class="remove material-symbols-outlined">remove</span><span  id="numero01"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais01()" class="add material-symbols-outlined">add</span>
                 <li> <img src="Americano.jpeg" alt="café Americano"></img><p>Americano</p><p>Preço: 3,00R$</p> <br><span  onclick="clickProdMenos02()"class="remove material-symbols-outlined">remove</span><span  id="numero02"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais02()" class="add material-symbols-outlined">add</span>
-                <li> <img src="Latte.jpeg" alt="café latte"></img><p>Café Latte</p><p>Preço: 5,00R$</p><br><span  onclick="clickProdMenos03()"class="remove material-symbols-outlined">remove</span><span  id="numero03"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais03()"class="add material-symbols-outlined">add</span>
+                </div><br>
+                <div><li> <img src="Latte.jpeg" alt="café latte"></img><p>Café Latte</p><p>Preço: 5,00R$</p><br><span  onclick="clickProdMenos03()"class="remove material-symbols-outlined">remove</span><span  id="numero03"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais03()"class="add material-symbols-outlined">add</span>
                 <li> <img src="Cappuccino.jpeg" alt="capuccino"></img><p>Cappuccino</p><p>Preço: 2,00R$</p><br><span onclick="clickProdMenos04()" class="remove material-symbols-outlined">remove</span><span  id="numero04"class="valor material-symbols-outlined">0</span><span  onclick="clickProdMais04()"class="add material-symbols-outlined">add</span>
-                <li> <img src="Macchiato.jpeg" alt="café macchiato"></img><p>Macchiato</p><p>Preço: 6,50R$</p><br><span  onclick="clickProdMenos05()"class="remove material-symbols-outlined">remove</span><span  id="numero05"class="valor material-symbols-outlined">0</span><span  onclick="clickProdMais05()"class="add material-symbols-outlined">add</span>
-                <li> <img src="Mocha.jpeg" alt="cafe mocha"></img><p>Mocha</p><p>Preço: 9,00R$</p><br><span  onclick="clickProdMenos06()"class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero06">0</span><span  onclick="clickProdMais06()"class="add material-symbols-outlined">add</span>
-                <li> <img src="Affogato.jpeg" alt="café affogato"></img><p>Affogato</p><p>Preço: 16,00R$</p><br><span onclick="clickProdMenos07()" class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero07">0</span><span onclick="clickProdMais07()"class="add material-symbols-outlined">add</span>
+                </div><br>
+               <div> <li> <img src="Macchiato.jpeg" alt="café macchiato"></img><p>Macchiato</p><p>Preço: 6,50R$</p><br><span  onclick="clickProdMenos05()"class="remove material-symbols-outlined">remove</span><span  id="numero05"class="valor material-symbols-outlined">0</span><span  onclick="clickProdMais05()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Mocha.jpeg" alt="cafe mocha"></img><p>Mocha</p><p>Preço: 9,00R$</p><br><span  onclick="clickProdMenos06()"class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero06">0</span><span  onclick="clickProdMais06()"class="add material-symbols-outlined">add</span></div>
+                <br>
+                <div><li> <img src="Affogato.jpeg" alt="café affogato"></img><p>Affogato</p><p style="white-space: nowrap;">Preço: 16,00R$</p><br><span onclick="clickProdMenos07()" class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero07">0</span><span onclick="clickProdMais07()"class="add material-symbols-outlined">add</span>
                 <li> <img src="Cold brew.jpeg" alt="cold brew"></img><p>Cold Brew</p><p>Preço: 8,90R$</p><br><span onclick="clickProdMenos08()" class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero08">0</span><span onclick="clickProdMais08()" class="add material-symbols-outlined">add</span>
-                
-                <li>
-                <li>    
-                <li>
+                </div>
             </ul>
             </article>
             <article id="seu-carrinho">
@@ -152,7 +155,7 @@ shopping_cart
                 <ul id="lista-produtos">
                     
                 </ul>
-                <p id="total-compra"></p>
+                <p id="total-compra" style="text-align: center; color: #F5F5F5;"></p>
                 <p onclick="confirmar()"id="confirmar" class="confirmar">Confirmar compra</p>
             </article>
         </section>
@@ -160,9 +163,10 @@ shopping_cart
             <p id="meg"></p>
             <p onclick="confirmar()" class="confirmar">Sair</p>
         </div>
+        <hr>
     </main>
     <script src="script.js"></script>
    
 </body>
-    </html>
+                                                                                                         </html>
                 
