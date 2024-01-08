@@ -174,9 +174,12 @@ var meg = document.getElementById('meg')
         alerta.style.display = 'none'
     }else {
         alerta.style.display = 'block'
+        if (total == 0) {
+            meg.innerText = `Por favor, adicione itens ao seu carrinho `
+        }else{
+            meg.innerText = `Compra efetuada no valor de: ${total.toFixed(2)}R$`
+        }
     }
-    meg.innerText = `Compra efetuada no valor de: ${total.toFixed(2)}R$`
 }
 
 atualizarTotal();
-            
