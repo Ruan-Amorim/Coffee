@@ -11,6 +11,7 @@
     <link rel="icon" type="image/jpeg" href="Coffee-cat.jpg">
 </head>
 <body>
+    
     <main>
         <section id="web1">
             
@@ -18,6 +19,7 @@
                 <source src="Back-pc3.mp4" type="video/mp4">
             </video>
             <span id="menu" onclick="ClickMenu()" class="material-symbols-outlined">menu</span>
+            
             <nav id="NAV-MENU">
                 <ul>
                     <li id="menu01"><a  href="#guia1">História e tradição</a></li>
@@ -124,16 +126,18 @@ Canela em pó</p> <h1 class="trocar"onclick="receita()">Trocar Receita</h1></art
         </section>
         <section id="web6">
             <article id="Seu-pedido">
-            <h2>Faça seu pedido</h2>
+            <h2><span class="bibu material-symbols-outlined">
+shopping_bag
+</span>Faça seu pedido</h2>
             <ul>
-                <li> <img src="Expresso.png" alt="cafe Expresso"></img><p>Expresso</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Americano.jpeg" alt="café Americano"></img><p>Americano</p> <br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Latte.jpeg" alt="café latte"></img><p>Café Latte</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Cappuccino.jpeg" alt="capuccino"></img><p>Cappuccino</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Macchiato.jpeg" alt="café macchiato"></img><p>Macchiato</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Mocha.jpeg" alt="cafe mocha"></img><p>Mocha</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Affogato.jpeg" alt="café affogato"></img><p>Affogato</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
-                <li> <img src="Cold brew.jpeg" alt="cold brew"></img><p>Cold Brew</p><br><span  class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined">0</span><span class="add material-symbols-outlined">add</span>
+                <li> <img src="Expresso.png" alt="cafe Expresso"></img><p>Expresso</p><p>Preço: 9,50R$</p><br><span onclick="clickProdMenos01()" class="remove material-symbols-outlined">remove</span><span  id="numero01"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais01()" class="add material-symbols-outlined">add</span>
+                <li> <img src="Americano.jpeg" alt="café Americano"></img><p>Americano</p><p>Preço: 3,00R$</p> <br><span  onclick="clickProdMenos02()"class="remove material-symbols-outlined">remove</span><span  id="numero02"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais02()" class="add material-symbols-outlined">add</span>
+                <li> <img src="Latte.jpeg" alt="café latte"></img><p>Café Latte</p><p>Preço: 5,00R$</p><br><span  onclick="clickProdMenos03()"class="remove material-symbols-outlined">remove</span><span  id="numero03"class="valor material-symbols-outlined">0</span><span onclick="clickProdMais03()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Cappuccino.jpeg" alt="capuccino"></img><p>Cappuccino</p><p>Preço: 2,00R$</p><br><span onclick="clickProdMenos04()" class="remove material-symbols-outlined">remove</span><span  id="numero04"class="valor material-symbols-outlined">0</span><span  onclick="clickProdMais04()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Macchiato.jpeg" alt="café macchiato"></img><p>Macchiato</p><p>Preço: 6,50R$</p><br><span  onclick="clickProdMenos05()"class="remove material-symbols-outlined">remove</span><span  id="numero05"class="valor material-symbols-outlined">0</span><span  onclick="clickProdMais05()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Mocha.jpeg" alt="cafe mocha"></img><p>Mocha</p><p>Preço: 9,00R$</p><br><span  onclick="clickProdMenos06()"class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero06">0</span><span  onclick="clickProdMais06()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Affogato.jpeg" alt="café affogato"></img><p>Affogato</p><p>Preço: 16,00R$</p><br><span onclick="clickProdMenos07()" class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero07">0</span><span onclick="clickProdMais07()"class="add material-symbols-outlined">add</span>
+                <li> <img src="Cold brew.jpeg" alt="cold brew"></img><p>Cold Brew</p><p>Preço: 8,90R$</p><br><span onclick="clickProdMenos08()" class="remove material-symbols-outlined">remove</span><span  class="valor material-symbols-outlined" id="numero08">0</span><span onclick="clickProdMais08()" class="add material-symbols-outlined">add</span>
                 
                 <li>
                 <li>    
@@ -141,13 +145,24 @@ Canela em pó</p> <h1 class="trocar"onclick="receita()">Trocar Receita</h1></art
             </ul>
             </article>
             <article id="seu-carrinho">
-                <h2>Seu Carrinho</h2>
+                <h2><span class="bibu material-symbols-outlined">
+shopping_cart
+</span>Seu Carrinho</h2>
                 
+                <ul id="lista-produtos">
+                    
+                </ul>
+                <p id="total-compra"></p>
+                <p onclick="confirmar()"id="confirmar" class="confirmar">Confirmar compra</p>
             </article>
         </section>
+        <div id="alerta">
+            <p id="meg"></p>
+            <p onclick="confirmar()" class="confirmar">Sair</p>
+        </div>
     </main>
     <script src="script.js"></script>
    
 </body>
-                                        </html>
-                                                                   
+    </html>
+                
